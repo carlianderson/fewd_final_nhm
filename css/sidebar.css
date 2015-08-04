@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+    padding : 0;
+    margin : 0;
+    border : 0;
+}
+
+.clearfix:after{
+    content: '';
+    display: block;
+    font-size: 0;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+body {
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size: 18px;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.grid{
+    display: block;
+    width : 100%;
+    overflow : auto;
+}
+.top{
+    height : 110px;
+    width : 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.logo{
+    width: 30%;
+    height: 110px;
+    float: left;
+}
+
+.logo img{
+    margin-top: 0.556rem;
+}
+
+.rightTop{
+    width: 70%;
+    height: 110px;
+    float: left;
+}
+
+.search{
+    width: 100%;
+    height: 2.778em;
+}
+
+.search img{
+    float: right;
+    padding: 0.278rem;
+    margin-top: 0.833rem;
+}
+
+#newsearch{
+    float:right;
+    padding:1.111rem;
+}
+
+
+.textinput{
+    margin: 0;
+    padding: 0.278em 0.833rem;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size:0.778em;
+    border: 1px solid black;
+}
+.button {
+    margin: 0;
+    padding: 0.278rem 0.833rem;
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    font-size:0.778em;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border: solid 0.056em black border-right:0em;
+    background: #3F4F88;
+    border-top-right-radius: 0.278em 0.278em;
+    border-bottom-right-radius: 0.278em 0.278em;
+}
+.button:hover {
+    text-decoration: none;
+    background: #94ACDF;
+}
+
+#nav {
+/* container */
+    text-align: center;
+}
+
+#nav > a {
+    display: none;
+}
+
+#nav li {
+    position: relative;
+    background-color: #3F4F88;
+    height: 2.75em;
+}
+
+#nav li:hover {
+    display: block;
+    background-color: #6274B6;
+}
+
+#nav li a {
+    color: white;
+    text-decoration: none;
+    margin: auto;
+}
+/* first level */
+ 
+#nav > ul {
+    height: 2.75em;
+
+}
+
+#nav > ul > li {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+
+#nav > ul li+li {
+    border-left: 1px solid white;
+}
+ 
+/* second level */
+ 
+#nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: left;
+}
+
+#nav li ul li+li {
+    border-left: none;
+    border-top: 1px solid white;
+}
+
+
+#nav li:hover ul {
+    display: block;
+}
+
+/*#nav nav .mobile-nav {
+    float: right;
+    display: block;
+}
+
+#nav nav .mobile-nav li{
+    display: none;
+}
+
+.mobile-menu{
+    display: none;
+    float: right;
+    width: 5em;
+}
+
+.line{
+    height: .3em;
+    margin: .3rem;
+    border-radius: .15em;
+    background-color: #3F4F88;
+}
+*/
+.main{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 600px;
+}
+
+.sidebar{
+    width: 20%;
+    float: left;
+    background-color: #d3d3d3;
+    height: 600px;
+    border-right: 1px solid white;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+}
+
+.highlight{
+    width: 80%;
+    background-color: #d3d3d3;
+    float: left;
+    height: 600px;
+}
+
+.highlight img{
+    margin-top: 0.556rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight p{
+    font-size: 0.778em;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.bottom{
+    float : left;
+    height : 5.556em;
+    width : 100%;
+
+}
+
+
+.bottom p{
+    margin-top: 1.556rem;
+    display: block;
+    font-size: 0.667em;
+    text-align: center;
+}
+
+/*@media only screen and (max-width: 768px){
+    html {
+        font-size: 16px;
+    }
+    body {
+        font-size: 16px;
+    }
+
+    #nav {
+        overflow: auto;
+    }
+
+    li{
+        display: none;
+    }
+
+    .mobile-menu{
+        margin-top: .5em;
+        display: block;
+        float: right;
+    }
+
+
+#nav nav .mobile-nav li {
+        display: none;
+        margin: 0;
+        border: 0;
+        padding: 0;
+        float: none;
+        height: 3em;
+    }
+
+}*/
